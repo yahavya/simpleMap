@@ -9,7 +9,7 @@ type PageContainerProps = {
 };
 
 export function PageContainer({ children, title, info }: PageContainerProps) {
-  const documentTitle = `ProLog - ${title}`;
+  const documentTitle = `SimpleMap - ${title}`;
 
   return (
     <div className={styles.container}>
@@ -19,7 +19,6 @@ export function PageContainer({ children, title, info }: PageContainerProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <SidebarNavigation />
       <main className={styles.main}>
         <div className={styles.contentContainer}>
           <h1 className={styles.title}>{title}</h1>
