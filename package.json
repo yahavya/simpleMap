@@ -2,10 +2,12 @@
   "name": "prolog-app",
   "version": "14.5.2",
   "private": true,
+  "build": "react-scripts build",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prod": "next prod",
     "lint:code": "eslint --ignore-path .gitignore .",
     "lint:styles": "stylelint  --ignore-path .gitignore \"**/*.scss\"",
     "check:types": "tsc --noEmit",
