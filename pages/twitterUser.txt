@@ -1,4 +1,4 @@
-import { useState } from 'react';
+/*import { useState } from 'react';
 
 const twitterUser = () => {
   const [user, setUser] = useState(null);
@@ -44,3 +44,4 @@ const twitterUser = () => {
   );
 }
 export default twitterUser;
+*/
