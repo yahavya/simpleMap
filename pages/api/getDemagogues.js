@@ -1,10 +1,6 @@
-const { TwitterApi } = require("twitter-api-v2");
-
-const express = require("express");
-const cors = require("cors");
+import express from "express";
+import cors from "cors";
 const app = express();
-
-const port = 8080;
 
 app.use(cors( {origin: true}));
 app.use(express.json());
@@ -23,6 +19,6 @@ app.get("/api/getDemagogues", async (req, res) => {
   }
 })
 
-app.listen(port, () => {
+/*app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
-});
+}); */
