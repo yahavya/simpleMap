@@ -1,4 +1,5 @@
 {
+
   "hosting": {
     "source": ".",
     "ignore": [
@@ -9,5 +10,19 @@
     "frameworksBackend": {
       "region": "us-central1"
     }
+  },
+  
+  "functions": {
+    "source": ".",
+    "engines": {
+    "node": "18"
+    },
+    "runtimeOptions": {
+      "functions": {
+        "source": "functions",
+        "target": "app"
+      }
+    },
+    "source": "pages/api"
   }
 }

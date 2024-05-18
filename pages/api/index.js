@@ -1,5 +1,7 @@
 import express from "express";
 import cors from "cors";
+import { onRequest } from "firebase-functions"
+
 const app = express();
 
 app.use(cors( {origin: true}));
@@ -22,3 +24,5 @@ app.get("/api/getDemagogues", async (req, res) => {
 /*app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 }); */
+
+export const getDemagogues = onRequest(app);

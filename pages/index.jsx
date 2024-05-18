@@ -1,4 +1,3 @@
-import { PageContainer } from "@features/layout";
 
 const HomePage = () => {
 
@@ -12,7 +11,7 @@ const HomePage = () => {
     const input = saveInput();
     console.log(input);
     //?handle=${input}
-    const response = fetch(`https://ssrsimplemapd3ec4-es5dg2hjaa-uc.a.run.app/`)
+    const response = fetch(`https://ssrsimplemapd3ec4-es5dg2hjaa-uc.a.run.app/api/getDemagogues`)
       .then(function(serverPromise) {serverPromise.json().then(function(j){
         alert(j.names);
         console.log(response);
@@ -20,7 +19,7 @@ const HomePage = () => {
   };
 
   return (
-    <PageContainer
+    <div
       title="undemagogue"
       info=""
     >
@@ -29,7 +28,7 @@ const HomePage = () => {
         <input type="text" id="userInput"/>
         <input type="submit"/>
       </form>
-    </PageContainer>
+    </div>
   )
 
 }
